@@ -1,0 +1,51 @@
+/* Style pour chaque hôtel */
+.hotel {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+/* Style pour le titre de l'hôtel */
+.hotel h3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Style pour l'adresse de l'hôtel */
+.hotel p {
+    margin-top: 0;
+    color: #666;
+}
+
+/* Style pour la liste des chambres */
+.hotel ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 5px;
+}
+
+/* Style pour chaque chambre de l'hôtel */
+.hotel ul li {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 5px;
+}
+
+/* Style pour le bouton de sélection */
+.hotel form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.hotel form input[type="submit"]:hover {
+    background-color: #45a049;
+}

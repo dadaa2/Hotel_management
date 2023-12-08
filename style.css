@@ -1,0 +1,36 @@
+.container {
+    text-align: center;
+  }
+  
+  .register-form, .login-form {
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+  }
+  
+  .register-form {
+    width: 40%;
+  }
+  
+  .login-form {
+    width: 40%;
+  }
+  
