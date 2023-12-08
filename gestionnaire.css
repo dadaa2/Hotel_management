@@ -48,19 +48,17 @@ body {
 
 /* Style pour le conteneur des chambre */
 .chambres {
-    background-color: rgb(168, 224, 112);
+    background-color: rgb(212, 117, 23);
     border-radius: 5px;
     margin:2px;
     padding: 2px;
-
-
 }
 
     
 /* Style pour le conteneur de chacune des chambres */
     .chambre {
     margin: 5px;
-    background-color: #737272;
+    background-color: rgb(97, 159, 95);
     padding: 0;
     display: flex;
     justify-content: center;
@@ -103,12 +101,12 @@ input[type="submit"]:hover {
 /* Style pour les champs de texte */
 .input_text {
     width:20%;
-    padding: 8px;
+    padding: 4px;
     border: 3px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
-    margin-bottom: 10px;
+    margin: 2px;
 }
 
 /* Style pour les titres */
