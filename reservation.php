@@ -66,4 +66,24 @@
             echo "Vous devez être connecté pour accéder à cette page.";
         }
 
+        if (isset($_POST["submit_reservation"])) {
+            // Récupération des données du formulaire
+            $client_id = $_SESSION["client_id"];
+            $room_id = $_POST["room_id"];
+            $start_date = $_POST["start_date"];
+            $end_date = $_POST["end_date"];
+            $creation_date = date('Y-m-d'); // Date de création automatique
+        
+            // Requête SQL d'insertion
+            $sql_insert_reservation = "INSERT INTO book (ID_CLIENT, ID_ROOM, ARRIVALDATE, DEPARTUREDATE, CREATIONDATE) 
+                                       VALUES ('$client_id', '$room_id', '$start_date', '$end_date', '$creation_date')";
+        
+            // Exécution de la requête d'insertion
+            if (mysqli_query($conn, $sql_insert_reservation)) {
+                echo "Réservation réussie.";
+            } else {
+                echo "Erreur lors de la réservation : " . mysqli_error($conn);
+            }
+        }
+        
 ?>
