@@ -113,7 +113,7 @@
             $_SESSION["client_id"] = $row["ID"];
             
             echo "affichage de vardump2 : <br>",var_dump($_SESSION);
-            header("Refresh: 10; URL=liste.php");
+            header("Refresh: 5; URL=liste.php");
             echo "Vous êtes connecté. Vous serez redirigé dans 10 secondes...";
             exit();
         } 
@@ -147,7 +147,7 @@
                 //    header("Refresh: 10; Location: gestionnaire.php");
                 //    echo "session gestion : ",var_dump($_SESSION);
                 //    exit();
-                //}             
+                //}
             } else {
                 echo "Erreur id session : ",var_dump($_SESSION);
                 echo "Identifiants incorrects. Veuillez réessayer.";
