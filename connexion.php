@@ -2,7 +2,7 @@
     $serveur = "localhost";
     $user = "root";
     $mdp = "root";
-    $base_de_donnees = "hotel_management";
+    $base_de_donnees = "2hotel";
     $conn = "";
     
     $conn = mysqli_connect( $serveur, 

@@ -19,7 +19,7 @@
 </head>
 <body>
     <!-- Formulaire pour ajouter un hôtel -->
-    <form action='gestionnaire.php' method='post' onsubmit='actualiserPage()'>
+    <form action='gestionnaire.php' method='post'>
         <input type='text' class="input_text_" name='nouveau_nom_hotel' placeholder="Nom de l\'hôtel">
         <input type='text' class="input_text_" name='nouvelle_adresse_hotel' placeholder="Adresse de l\'hôtel">
         <input type='submit' name='ajouter_hotel' value="Ajouter l\'hôtel">
