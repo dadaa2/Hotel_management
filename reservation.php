@@ -74,15 +74,30 @@
             $end_date = $_POST["end_date"];
             $creation_date = date('Y-m-d'); // Date de création automatique
         
-            // Requête SQL d'insertion
-            $sql_insert_reservation = "INSERT INTO book (ID_CLIENT, ID_ROOM, ARRIVALDATE, DEPARTUREDATE, CREATIONDATE) 
-                                       VALUES ('$client_id', '$room_id', '$start_date', '$end_date', '$creation_date')";
-        
-            // Exécution de la requête d'insertion
-            if (mysqli_query($conn, $sql_insert_reservation)) {
-                echo "Réservation réussie.";
+            $sql_check_availability = "SELECT * FROM book 
+                           WHERE ID_ROOM = '$room_id' 
+                           AND ((ARRIVALDATE BETWEEN '$start_date' AND '$end_date') 
+                           OR (DEPARTUREDATE BETWEEN '$start_date' AND '$end_date'))";
+
+            $result_check_availability = mysqli_query($conn, $sql_check_availability);
+
+            if (mysqli_num_rows($result_check_availability) > 0) {
+                echo "La chambre est déjà réservée pour une partie de cette période. Veuillez choisir d'autres dates.";
+                echo "<a href='liste.php'>Revenir à la page de réservation</a>";
             } else {
-                echo "Erreur lors de la réservation : " . mysqli_error($conn);
+                // Si la chambre est disponible, effectuer la réservation
+                $sql_insert_reservation = "INSERT INTO book (ID_CLIENT, ID_ROOM, ARRIVALDATE, DEPARTUREDATE, CREATIONDATE) 
+                                           VALUES ('$client_id', '$room_id', '$start_date', '$end_date', '$creation_date')";
+            
+                if (mysqli_query($conn, $sql_insert_reservation)) {
+                    echo "Réservation réussie, vous serez redirigée vers la liste des hôtels";
+                    header("Refresh: 2; URL=liste.php");
+                    
+
+
+                } else {
+                    echo "Erreur lors de la réservation : " . mysqli_error($conn);
+                }
             }
         }
         

@@ -113,8 +113,8 @@
             $_SESSION["client_id"] = $row["ID"];
             
             echo "affichage de vardump2 : <br>",var_dump($_SESSION);
-            header("Refresh: 5; URL=liste.php");
-            echo "Vous êtes connecté. Vous serez redirigé dans 10 secondes...";
+            header("Refresh: 2; URL=liste.php");
+            echo "Vous êtes connecté. Vous serez redirigé dans 2 secondes...";
             exit();
         } 
             //echo "Bloc de code pour client exécuté";
@@ -135,8 +135,8 @@
                 echo "ROLE : ",var_dump($row["ROLE"]), "<br>";
                 echo "Role dans sessions : ", $_SESSION["user_role"], "<br>";
                 
-                header("Refresh: 5; URL=gestionnaire.php");
-                echo "Vous êtes connecté en tant que gestionnaire. Vous serez redirigé dans 5 secondes...";
+                header("Refresh: 2; URL=gestionnaire.php");
+                echo "Vous êtes connecté en tant que gestionnaire. Vous serez redirigé dans 2 secondes...";
                 exit();
                 //if ($_SESSION["user_role"] == "ADMIN") {
                 //    header("Refresh: 10; Location: admin.php");
