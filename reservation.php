@@ -9,19 +9,8 @@
 </head>
 <body>
     <h1>Réservation</h1>
-
-    
    </body>
 </html>
-
-<?php
-    if(isset($_POST["logout"])){
-        session_destroy();
-        header("Location: index.php");
-    }
-?>
-
-
 <?php
     session_start();
     include("connexion.php");
@@ -100,5 +89,8 @@
                 }
             }
         }
-        
+    if(isset($_POST["logout"])){
+        session_destroy();
+        header("Location: index.php");
+    }    
 ?>
