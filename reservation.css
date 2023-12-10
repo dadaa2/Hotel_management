@@ -1,13 +1,45 @@
-.room {
+body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* Styliser les inputs de type date */
+
+.room{
+    display: flex;
+    justify-content: center;
+}
+.form{
+    margin: 5px;
+    padding: 50px ;
+}
+
+
+input[type="date"] {
+    color: #333;
     border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 20px;
+    border-radius: 4px;
+    margin: 5px 0;
+    padding: 8px;
+    
     background-color: #f9f9f9;
-    border-radius: 10px;
-}
-
-.room form {
-    margin-top: 10px;
-}
-
-/* Autres styles CSS pour les formulaires et les éléments de formulaire */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
