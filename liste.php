@@ -24,10 +24,16 @@
     <link rel="stylesheet" href="liste.css">
 </head>
 <body>
-    <h1>La page des hôtels</h1>
+    <form class="deconnexion" action="liste.php" method="post">
+        <input type="submit" name="logout" value="Déconnexion">
+    </form>
+    <a href="listebook.php">Voir les réservations</a>
+
+
+<h1 class="titre" >La page des hôtels</h1>
     <main> 
-        <section id="hotel-list">
-            <h2>Liste des Hôtels</h2>
+            <section id="hotel-list">
+            <h2 class="titre2" >Liste des Hôtels</h2>
             <?php
                 // Récupérer la liste des hôtels depuis la base de données
                 $sql = "SELECT * FROM hotel";
@@ -65,14 +71,7 @@
                 }
             ?>
         </section>
-
-       
-
     </main>
-
-    <form action="liste.php" method="post">
-        <input type="submit" name="logout" value="Deconnexion">
-    </form>
 </body>
 </html>
 

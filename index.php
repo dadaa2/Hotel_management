@@ -52,12 +52,14 @@
         </form>
     </div>
     <!--<a href="liste.php">Connexion vers la page de liste d'hôtel <br></a>-->
-    <h3>Client exemple : george@gmail.com et george</h3>
-    <h3>User admin exemple : david@gmail.com et davidd</h3>
-    <h3>User gestion exemple : mama@gmail.com et ecole</h3>
-    <form action="liste.php" method="post">
-        <input type="submit" name="logout" value="Deconnexion">
-    </form>
+    <div class="Comptes">
+        <h2>Comptes</h2>
+        <h3 class="ecriture">Client : george@gmail.com</br>
+        Mot de passe : george </h3>
+        <h3 class="ecriture">User admin : david@gmail.com </br>
+        Mot de passe : davidd </h3>
+    </div>
+    
 </body>
 </html>
 <?php

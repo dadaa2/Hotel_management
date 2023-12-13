@@ -3,12 +3,17 @@ body {
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    background-image: url(mur-bois-ascenseurs-floues.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    
 }
 .container {
     width: 60%;
     margin: 100px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: white;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -31,6 +36,7 @@ label {
 }
 
 input[type="text"],
+
 input[type="password"] {
     width: calc(100% - 12px);
     padding: 8px;
@@ -41,7 +47,7 @@ input[type="password"] {
 }
 
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: rgb(15, 63, 196);
     color: white;
     padding: 10px 20px;
     border: none;
@@ -51,10 +57,17 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #040d41e8;
 }
 h3 {
     text-align: center;
     margin-top: 30px;
     color: #333;
 }
+
+.Comptes{
+    text-align: center;
+    border: 1px solid #ffffff ;
+    color: white;
+}
+

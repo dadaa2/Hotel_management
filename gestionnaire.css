@@ -4,11 +4,18 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
+    background-image: url(mur-bois-ascenseurs-floues.jpg);
+    background-size: cover;
+    background-repeat: 1;
+}
+
+.titre{
+    color: black;
 }
 
 /* Style pour le bouton de déconnexion */
 .logout_button {
-    background-color: #ff5722;
+    background-color: #1464ce;
     color: white;
     padding: 8px 16px;
     border: none;
@@ -25,7 +32,7 @@ body {
 }
 .new_name_chamber{
     border-radius: 5px;
-    background-color: #4CAF50;
+    background-color: #ffffff;
     color: white;
     padding: 5px 12px;
     border: none;
@@ -37,18 +44,20 @@ body {
 
 /* Style pour le conteneur de chaque hôtel */
 .hotel-info {
-    border: 2px solid #ccc;
+    border: 2px solid #ffffff;
     padding: 10px;
     margin-bottom: 20px;
-    background-color: #f9f9f9;
+    background-color: transparent;
     border-radius: 10px;
+    color: black;
+    
 }
 
 
 
 /* Style pour le conteneur des chambre */
 .chambres {
-    background-color: rgb(212, 117, 23);
+    background-color: transparent;
     border-radius: 5px;
     margin:2px;
     padding: 2px;
@@ -58,7 +67,7 @@ body {
 /* Style pour le conteneur de chacune des chambres */
     .chambre {
     margin: 5px;
-    background-color: rgb(97, 159, 95);
+    background-color: transparent;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -84,7 +93,7 @@ body {
 
 /* Style pour les boutons dans les formulaires */
 input[type="submit"] {
-    background-color: #4bb550;
+    background-color: #1168ccc7;
     color: white;
     padding: 5px 12px;
     border: none;
@@ -95,14 +104,14 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0e40aa;
 }
 
 /* Style pour les champs de texte */
 .input_text {
     width:20%;
     padding: 4px;
-    border: 3px solid #ccc;
+    border: 3px solid #d3cccc7e;
     border-radius: 4px;
     box-sizing: border-box;
     font-size: 16px;
@@ -140,3 +149,18 @@ h2, h3, h4 {
     background-color: #4caf50;
     color: white;
 }
+
+.input_text_{
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.ajouthotel{
+    margin-left: 700px;
+    margin-top: 50px;
+}
+
+.bouton_ajout{
+    background-color: skyblue;
+}
+

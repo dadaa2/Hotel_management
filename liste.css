@@ -1,10 +1,30 @@
-/* Style pour chaque hôtel */
+body{
+    background-image: url(mur-bois-ascenseurs-floues.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.titre{
+    margin-left: 830px;
+    color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.titre2{
+    margin-left: 870px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
 .hotel {
     border: 1px solid #ccc;
     padding: 10px;
     margin-bottom: 10px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9f1;
     border-radius: 5px;
+    margin-right: 500px;
+    margin-left: 500px;
 }
 
 /* Style pour le titre de l'hôtel */
@@ -12,13 +32,14 @@
     margin-top: 0;
     margin-bottom: 5px;
     font-size: 20px;
-    color: #333;
+    color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Style pour l'adresse de l'hôtel */
 .hotel p {
     margin-top: 0;
-    color: #666;
+    color: #3f3d3d;
 }
 
 /* Style pour la liste des chambres */
@@ -31,13 +52,14 @@
 /* Style pour chaque chambre de l'hôtel */
 .hotel ul li {
     font-size: 16px;
-    color: #444;
+    color: #000000;
     margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 /* Style pour le bouton de sélection */
 .hotel form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0f55bd;
     color: white;
     padding: 5px 12px;
     border: none;
@@ -47,5 +69,7 @@
 }
 
 .hotel form input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0d46c2;
 }
+
+
