@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="reservation.css">
 </head>
 <body>
-    <h1>Réservation</h1>
+    <h1>Réservation des chambres</h1>
    </body>
 </html>
 <?php
@@ -81,9 +81,6 @@
                 if (mysqli_query($conn, $sql_insert_reservation)) {
                     echo "Réservation réussie, vous serez redirigée vers la liste des hôtels";
                     header("Refresh: 2; URL=liste.php");
-                    
-
-
                 } else {
                     echo "Erreur lors de la réservation : " . mysqli_error($conn);
                 }

@@ -7,7 +7,7 @@
     //echo "affichage de vardump email et password<br> : ",var_dump($_SESSION),"<br>";
     
     if(isset($_SESSION["mail"]) && isset($_SESSION["password"])){
-        echo "";
+        echo "Vous êtes bien connecté";
     } else {
         echo "<p>Vous devez être connecté pour accéder à cette page.</p>";
         echo "<a href='index.php'>Retour à la page d'accueil</a>";
@@ -24,9 +24,15 @@
     <link rel="stylesheet" href="liste.css">
 </head>
 <body>
-    <h1 class="titre" >La page des hôtels</h1>
+    <form class="deconnexion" action="liste.php" method="post">
+        <input type="submit" name="logout" value="Déconnexion">
+    </form>
+    <a href="listebook.php">Voir les réservations</a>
+
+
+<h1 class="titre" >La page des hôtels</h1>
     <main> 
-        <section id="hotel-list">
+            <section id="hotel-list">
             <h2 class="titre2" >Liste des Hôtels</h2>
             <?php
                 // Récupérer la liste des hôtels depuis la base de données
@@ -65,14 +71,7 @@
                 }
             ?>
         </section>
-
-       
-
     </main>
-
-    <form class="deconnexion" action="liste.php" method="post">
-        <input type="submit" name="logout" value="Deconnexion">
-    </form>
 </body>
 </html>
 
