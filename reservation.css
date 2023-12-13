@@ -1,6 +1,11 @@
 body{
     display: flex;
     flex-direction: column;
+    background-image: url(mur-bois-ascenseurs-floues.jpg);
+    background-size: cover;
+    background-repeat: 1;
+    color: black;
+
 
 }
 
@@ -11,10 +16,13 @@ body{
 .room{
     display: flex;
     justify-content: center;
+    margin: 50px;
+    
 }
 .form{
     margin: 5px;
     padding: 50px ;
+    
 }
 
 
@@ -24,13 +32,13 @@ input[type="date"] {
     border-radius: 4px;
     margin: 5px 0;
     padding: 8px;
-    
+    margin-left: 50px;
     background-color: #f9f9f9;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
   
   input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #0f62cf;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -40,6 +48,8 @@ input[type="date"] {
   }
   
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #0848be;
   }
-  
+
+
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gestion des hôtels et des chambres</title>
-    <h1>Gestion des hôtels et des chambres</h1>
+    <h1 class="titre" >Gestion des hôtels et des chambres</h1>
     <script>
         //JS actualisation de la page lors de changement dans la base de donnée
         
@@ -19,10 +19,10 @@
 </head>
 <body>
     <!-- Formulaire pour ajouter un hôtel -->
-    <form action='gestionnaire.php' method='post'>
-        <input type='text' class="input_text_" name='nouveau_nom_hotel' placeholder="Nom de l\'hôtel">
-        <input type='text' class="input_text_" name='nouvelle_adresse_hotel' placeholder="Adresse de l\'hôtel">
-        <input type='submit' name='ajouter_hotel' value="Ajouter l\'hôtel">
+    <form class="ajouthotel" action='gestionnaire.php' method='post'>
+        <input type='text' class="input_text_" name='nouveau_nom_hotel' placeholder="Nom de l'hôtel">
+        <input type='text' class="input_text_" name='nouvelle_adresse_hotel' placeholder="Adresse de l'hôtel">
+        <input class="bouton_ajout" type='submit' name='ajouter_hotel' value="Ajouter l'hôtel">
     </form>
 
     <form action="liste.php" method="post">
