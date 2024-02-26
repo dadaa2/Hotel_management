@@ -96,7 +96,6 @@
             
                             // Afficher les détails de la chambre 
                             echo "<div class='chambre'>";       //début conteneur chambre
-                            
                                 echo "<div class='nom'>";   
                                 echo "<span id='chambre_$chambre_id'>$libelle_chambre</span><br>"; //nom de la chambre
                                 echo "</div class='nom'>";   
